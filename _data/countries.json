@@ -1,0 +1,46 @@
+[
+  {
+    "id": "id",
+    "name": "Indonesia"
+  },
+  {
+    "id": "my",
+    "name": "Malaysia"
+  },
+  {
+    "id": "sg",
+    "name": "Singapore"
+  },
+  {
+    "id": "bn",
+    "name": "Brunei Darussalam"
+  },
+  {
+    "id": "ph",
+    "name": "Philippines"
+  },
+  {
+    "id": "th",
+    "name": "Thailand"
+  },
+  {
+    "id": "vn",
+    "name": "Vietnam"
+  },
+  {
+    "id": "la",
+    "name": "Laos"
+  },
+  {
+    "id": "kh",
+    "name": "Cambodia"
+  },
+  {
+    "id": "mm",
+    "name": "Myanmar"
+  },
+  {
+    "id": "tl",
+    "name": "Timor-Leste"
+  }
+]

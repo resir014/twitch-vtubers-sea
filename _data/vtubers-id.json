@@ -1,0 +1,111 @@
+[
+  {
+    "type": "twitch",
+    "id": "renjiro_junichi",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "katsuki_d",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "avilarozma",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "tilehopper",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "shiromu_kara",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "kurorak",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": [
+      {
+        "type": "youtube",
+        "id": "Kurorak"
+      }
+    ]
+  },
+  {
+    "type": "twitch",
+    "id": "naikazevt",
+    "birthday": null,
+    "persona": "10 IQ Femboy",
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "cakwe",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "venesha",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "raelaveire",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "raynexinanna",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "sedovt",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  },
+  {
+    "type": "twitch",
+    "id": "victorhandoyoch",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": []
+  }
+]
