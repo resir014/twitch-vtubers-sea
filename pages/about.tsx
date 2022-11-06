@@ -25,9 +25,9 @@ export default function AboutPage() {
           <PageHeader pageTitle={meta.title} description={meta.tagline} />
           <div className="prose prose-lg prose-indigo mx-auto mt-8 lg:mt-12">
             <p>
-              While the rise of VTubers over the past few years &endash; especially on the Southeast
-              Asian region &endash; is incredible to see, we felt like there&apos;s not much love
-              for VTubers who primarily stream on <a href="https://www.twitch.tv/">Twitch</a>.
+              While the rise of VTubers over the past few years — especially on the Southeast Asian
+              region — is incredible to see, we felt like there&apos;s not much love for VTubers who
+              primarily stream on <a href="https://www.twitch.tv/">Twitch</a>.
             </p>
             <p>
               Therefore, we sought to create this open and actively-updated database on well-known
