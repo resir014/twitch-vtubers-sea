@@ -2,7 +2,8 @@ import { PaginationResponse } from '~/utils/pagination';
 
 export type PlatformItem = {
   type: string;
-  id: string;
+  id?: string;
+  vanity_url?: string;
 };
 
 export type StreamerTwitchData = {

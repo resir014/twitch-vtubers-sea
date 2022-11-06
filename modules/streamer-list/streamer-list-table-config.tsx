@@ -20,6 +20,15 @@ function renderSocialLinks(item: PlatformItem) {
       );
     }
     case 'youtube': {
+      if (item.vanity_url) {
+        return (
+          <SocialLinkButton href={`https://www.youtube.com/c/${item.vanity_url}`}>
+            <span className="sr-only">YouTube</span>
+            <FontAwesomeIcon icon={faYoutube} />
+          </SocialLinkButton>
+        );
+      }
+
       return (
         <SocialLinkButton href={`https://www.youtube.com/channel/${item.id}`}>
           <span className="sr-only">YouTube</span>
