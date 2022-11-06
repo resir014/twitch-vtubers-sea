@@ -26,6 +26,6 @@ yarn build
 yarn test
 ```
 
-## Credits
+## Contributing
 
-Built with [Next.js](https://nextjs.org/).
+Pull Requests + contributions welcome! Please read the [Contributing Guidelines](CONTRIBUTING.md) if you want to contribute.
