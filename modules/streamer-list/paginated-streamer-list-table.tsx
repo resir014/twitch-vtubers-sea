@@ -11,7 +11,7 @@ export interface PaginatedStreamerListTableProps {
 }
 
 export function PaginatedStreamerListTable({ country, debug }: PaginatedStreamerListTableProps) {
-  const { pagination, setPagination } = useTablePagination(5);
+  const { pagination, setPagination } = useTablePagination();
   const { pageIndex, pageSize } = pagination;
 
   const defaultData = React.useMemo(() => [], []);
