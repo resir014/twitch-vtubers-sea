@@ -1,0 +1,15 @@
+[
+  {
+    "type": "twitch",
+    "id": "charonfaustinus",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "CharonFaustinus"
+      }
+    ]
+  }
+]
