@@ -131,7 +131,9 @@ export function PaginatedStreamerListTable({ country, debug }: PaginatedStreamer
         >
           <div className="flex items-center space-x-6">
             <div className="hidden sm:block">{renderPageNumbers()}</div>
-            {!isError && isLoading ? <p className="text-sm text-gray-700">Loading...</p> : null}
+            {!isError && isLoading ? (
+              <p className="hidden sm:block text-sm text-gray-700">Loading...</p>
+            ) : null}
           </div>
           <div className="flex flex-1 justify-between sm:justify-end">
             <button
