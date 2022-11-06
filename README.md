@@ -18,7 +18,7 @@ First, clone the repository.
 git clone https://github.com/resir014/twitch-vtubers-sea.git
 ```
 
-Then, install dependencies and fetch data to your local machine. **Note that we use Yarn, not npm.**
+Then, install the dependencies to your local machine. **Note that we use Yarn, not npm.**
 
 ```bash
 cd twitch-vtubers-sea
