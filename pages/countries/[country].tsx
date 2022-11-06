@@ -6,6 +6,7 @@ import { parseString } from '~/utils/query-parser';
 import { BaseLayout } from '~/components/layouts/base-layout';
 import { PaginatedStreamerListTable } from '~/modules/streamer-list/paginated-streamer-list-table';
 import { trpc } from '~/utils/trpc';
+import { WarningBanner } from '~/components/ui/warning-banner';
 
 export default function VtubersListPage() {
   const { query } = useRouter();
@@ -27,12 +28,15 @@ export default function VtubersListPage() {
         }}
         title={meta.title}
       />
+      <Container className="mb-8">
+        <WarningBanner />
+      </Container>
       <Container>
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
             {!isLoading && data?.name ? data.name : 'Loading...'}
           </h1>
-          <p className="mx-auto mt-4 max-w-4xl text-lg text-gray-500">
+          <p className="mx-auto mt-2 max-w-4xl text-lg text-gray-500">
             {!isLoading && data?.name
               ? `Listing all VTubers from ${data.name} in the Southeast Asia Twitch VTubers database.`
               : 'Please wait a moment...'}

@@ -19,7 +19,7 @@ export function CountryListItem({ id, name }: CountryListItemProps) {
       </div>
       <div className="mt-8">
         <h3 className="text-lg font-medium">
-          <Link href={`/${id}`} className="focus:outline-none">
+          <Link href={`/countries/${id}`} className="focus:outline-none">
             {/* Extend touch target to entire panel */}
             <span className="absolute inset-0" aria-hidden="true" />
             {name}

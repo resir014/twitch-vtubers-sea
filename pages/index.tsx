@@ -6,6 +6,7 @@ import { trpc } from '~/utils/trpc';
 import { CountryListItem } from '~/modules/country-list/country-list-item';
 import siteConfig from '~/modules/content/site-config';
 import { LoadingPlaceholder } from '~/components/ui/loading';
+import { WarningBanner } from '~/components/ui/warning-banner';
 
 const meta = {
   title: `${siteConfig.site_tagline} | ${siteConfig.site_name}`,
@@ -35,6 +36,9 @@ export default function IndexPage() {
   return (
     <BaseLayout>
       <NextSeo title={meta.title} titleTemplate="%s" />
+      <Container className="mb-8">
+        <WarningBanner />
+      </Container>
       <Container className="flex flex-col flex-1">
         <div className="text-center mb-8 lg:mb-16">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">

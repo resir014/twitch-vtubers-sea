@@ -3,6 +3,7 @@ import { NextSeo } from 'next-seo';
 import { BaseLayout } from '~/components/layouts/base-layout';
 import { Container } from '~/components/ui/container';
 import siteConfig from '~/modules/content/site-config';
+import { WarningBanner } from '~/components/ui/warning-banner';
 
 const meta = {
   title: 'About',
@@ -18,12 +19,15 @@ export default function AboutPage() {
         openGraph={{ title: meta.title, description: meta.description }}
         title={meta.title}
       />
+      <Container className="mb-8">
+        <WarningBanner />
+      </Container>
       <Container>
         <div className="text-center">
           <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
             {meta.title}
           </h1>
-          <p className="mx-auto mt-4 max-w-4xl text-lg text-gray-500">{meta.tagline}</p>
+          <p className="mx-auto mt-2 max-w-4xl text-lg text-gray-500">{meta.tagline}</p>
         </div>
         <div className="prose prose-lg prose-indigo mx-auto mt-8 lg:mt-12">
           <p>
