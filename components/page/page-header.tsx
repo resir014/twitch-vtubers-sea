@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import * as React from 'react';
 
 export interface PageHeaderProps extends React.ComponentPropsWithoutRef<'p'> {
@@ -5,9 +6,9 @@ export interface PageHeaderProps extends React.ComponentPropsWithoutRef<'p'> {
   description?: string;
 }
 
-export function PageHeader({ pageTitle, description }: PageHeaderProps) {
+export function PageHeader({ pageTitle, description, className, ...rest }: PageHeaderProps) {
   return (
-    <div className="text-center">
+    <div className={clsx('text-center', className)} {...rest}>
       <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
         {pageTitle}
       </h1>

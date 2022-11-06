@@ -6,7 +6,7 @@ import { trpc } from '~/utils/trpc';
 import { CountryListItem } from '~/modules/country-list/country-list-item';
 import siteConfig from '~/modules/content/site-config';
 import { LoadingPlaceholder } from '~/components/ui/loading';
-import { WarningBanner } from '~/components/ui/warning-banner';
+import { Page } from '~/components/page/page';
 
 const meta = {
   title: `${siteConfig.site_tagline} | ${siteConfig.site_name}`,
@@ -36,21 +36,20 @@ export default function IndexPage() {
   return (
     <BaseLayout>
       <NextSeo title={meta.title} titleTemplate="%s" />
-      <Container className="mb-8">
-        <WarningBanner />
-      </Container>
-      <Container className="flex flex-col flex-1">
-        <div className="text-center mb-8 lg:mb-16">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-            Twitch VTubers from Southeast Asia
-          </h1>
-          <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
-            Welcome! This is an open and actively-updated database for VTubers in Southeast Asia who
-            stream primarily on Twitch.
-          </p>
-        </div>
-        <div className="flex flex-col flex-1">{renderData()}</div>
-      </Container>
+      <Page>
+        <Container className="flex flex-col flex-1">
+          <div className="text-center mb-8 lg:mb-16">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+              Twitch VTubers from Southeast Asia
+            </h1>
+            <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
+              Welcome! This is an open and actively-updated database for VTubers in Southeast Asia
+              who stream primarily on Twitch.
+            </p>
+          </div>
+          <div className="flex flex-col flex-1">{renderData()}</div>
+        </Container>
+      </Page>
     </BaseLayout>
   );
 }

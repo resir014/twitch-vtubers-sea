@@ -6,8 +6,8 @@ import { parseString } from '~/utils/query-parser';
 import { BaseLayout } from '~/components/layouts/base-layout';
 import { PaginatedStreamerListTable } from '~/modules/streamer-list/paginated-streamer-list-table';
 import { trpc } from '~/utils/trpc';
-import { WarningBanner } from '~/components/ui/warning-banner';
-import { PageHeader } from '~/components/ui/page-header';
+import { PageHeader } from '~/components/page/page-header';
+import { Page } from '~/components/page/page';
 
 export default function VtubersListPage() {
   const { query } = useRouter();
@@ -29,20 +29,19 @@ export default function VtubersListPage() {
         }}
         title={meta.title}
       />
-      <Container className="mb-8">
-        <WarningBanner />
-      </Container>
-      <Container>
-        <PageHeader
-          pageTitle={!isLoading && data?.name ? data.name : 'Loading...'}
-          description={
-            !isLoading && data?.name
-              ? `Listing all VTubers from ${data.name} in the Southeast Asia Twitch VTubers database.`
-              : 'Please wait a moment...'
-          }
-        />
-        <PaginatedStreamerListTable country={country} />
-      </Container>
+      <Page>
+        <Container>
+          <PageHeader
+            pageTitle={!isLoading && data?.name ? data.name : 'Loading...'}
+            description={
+              !isLoading && data?.name
+                ? `Listing all VTubers from ${data.name} in the Southeast Asia Twitch VTubers database.`
+                : 'Please wait a moment...'
+            }
+          />
+          <PaginatedStreamerListTable country={country} />
+        </Container>
+      </Page>
     </BaseLayout>
   );
 }
