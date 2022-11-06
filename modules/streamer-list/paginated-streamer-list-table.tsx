@@ -1,6 +1,7 @@
 import { flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table';
 import clsx from 'clsx';
 import * as React from 'react';
+import { LoadingSpinner } from '~/components/ui/loading';
 import { trpc } from '~/utils/trpc';
 import { columns } from './streamer-list-table-config';
 import { useTablePagination } from './use-table-pagination';
@@ -97,7 +98,10 @@ export function PaginatedStreamerListTable({ country, debug }: PaginatedStreamer
                         colSpan={6}
                         className="whitespace-nowrap py-4 pl-4 pr-3 text-sm text-gray-900 sm:pl-6 sm:pr-6"
                       >
-                        Loading...
+                        <div className="flex flex-col items-center justify-center text-center py-8">
+                          <span className="sr-only">Loading...</span>
+                          <LoadingSpinner />
+                        </div>
                       </td>
                     </tr>
                   ) : (
