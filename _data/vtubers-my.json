@@ -5,6 +5,11 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "cottonwings"
+      }
+    ]
   }
 ]

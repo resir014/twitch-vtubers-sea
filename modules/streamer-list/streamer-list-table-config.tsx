@@ -1,10 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
 import { CheckBadgeIcon } from '@heroicons/react/20/solid';
 import { createColumnHelper } from '@tanstack/react-table';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import * as React from 'react';
-import { VtubersResponseItem } from '../database/types';
+import { PlatformItem, VtubersResponseItem } from '../database/types';
+import { SocialLinkButton } from './components/social-link-button';
 
 const columnHelper = createColumnHelper<VtubersResponseItem>();
+
+function renderSocialLinks(item: PlatformItem) {
+  switch (item.type) {
+    case 'twitter': {
+      return (
+        <SocialLinkButton href={`https://twitter.com/${item.id}`}>
+          <span className="sr-only">Twitter</span>
+          <FontAwesomeIcon icon={faTwitter} />
+        </SocialLinkButton>
+      );
+    }
+    case 'youtube': {
+      return (
+        <SocialLinkButton href={`https://www.youtube.com/c/${item.id}`}>
+          <span className="sr-only">YouTube</span>
+          <FontAwesomeIcon icon={faYoutube} />
+        </SocialLinkButton>
+      );
+    }
+    default: {
+      return null;
+    }
+  }
+}
 
 export const columns = [
   columnHelper.accessor(
@@ -72,14 +99,6 @@ export const columns = [
       return value ? Intl.NumberFormat('en-GB').format(value) : undefined;
     },
   }),
-  columnHelper.accessor(row => row.twitch?.viewCount, {
-    id: 'viewCount',
-    header: 'Views',
-    cell: info => {
-      const value = info.getValue();
-      return value ? Intl.NumberFormat('en-GB').format(value) : undefined;
-    },
-  }),
   columnHelper.accessor('birthday', {
     header: 'Birthday',
     cell: info => info.getValue() ?? '-',
@@ -91,5 +110,16 @@ export const columns = [
   columnHelper.accessor('affiliation', {
     header: 'Affiliation',
     cell: info => info.getValue() ?? '-',
+  }),
+  columnHelper.accessor('other_platforms', {
+    header: 'Other Platforms',
+    cell: info => {
+      const items = info.getValue();
+      return (
+        <div className="flex items-center space-x-2">
+          {items.map(item => renderSocialLinks(item))}
+        </div>
+      );
+    },
   }),
 ];

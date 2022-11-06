@@ -5,7 +5,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "Renjiro_Junichi"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -13,7 +18,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "KATSUKi_D_TUBE"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -21,7 +31,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "AvilaRozma"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -29,7 +44,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "tilehopper"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -37,7 +57,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "shiromu_kara"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -49,6 +74,10 @@
       {
         "type": "youtube",
         "id": "Kurorak"
+      },
+      {
+        "type": "twitter",
+        "id": "KURORAK"
       }
     ]
   },
@@ -56,9 +85,14 @@
     "type": "twitch",
     "id": "naikazevt",
     "birthday": null,
-    "persona": "10 IQ Femboy",
+    "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "NaikazeVT"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -66,7 +100,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "_cakwe"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -74,7 +113,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "mbakvene"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -82,7 +126,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "raelaveire"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -90,7 +139,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "raynexinanna"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -98,7 +152,12 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "Sedo_VT"
+      }
+    ]
   },
   {
     "type": "twitch",
@@ -106,6 +165,11 @@
     "birthday": null,
     "persona": null,
     "affiliation": null,
-    "other_platforms": []
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "VicVTuber"
+      }
+    ]
   }
 ]

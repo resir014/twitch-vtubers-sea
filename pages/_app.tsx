@@ -2,10 +2,14 @@ import * as React from 'react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { DefaultSeo } from 'next-seo';
+import { config } from '@fortawesome/fontawesome-svg-core';
 import siteConfig from '~/modules/content/site-config';
 import { trpc } from '../utils/trpc';
 
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import '~/styles/globals.css';
+
+config.autoAddCss = false;
 
 const meta = {
   siteName: siteConfig.site_name,
