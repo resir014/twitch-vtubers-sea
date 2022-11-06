@@ -8,23 +8,37 @@
 >
 > Since I'm personally not that deeply-invested into the VTuber scene, I will need help in updating this database. Let me know at [@resir014](https://twitter.com/resir014) on Twitter if you're interested.
 
-## Developing
+## Getting Started
 
-A nodejs >= 16.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
+To get started running the project locally, please follow the steps below.
+
+First, clone the repository.
 
 ```bash
-# install dependencies
-yarn
-
-# serve with hot reload at localhost:3000
-yarn dev
-
-# build for production
-yarn build
-
-# run tests (lint + type check)
-yarn test
+git clone https://github.com/resir014/twitch-vtubers-sea.git
 ```
+
+Then, install dependencies and fetch data to your local machine. **Note that we use Yarn, not npm.**
+
+```bash
+cd twitch-vtubers-sea
+yarn install
+```
+
+Finally, run the development server.
+
+```bash
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 ## Contributing
 
