@@ -6,9 +6,9 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import siteConfig from '~/modules/content/site-config';
 import { trpc } from '../utils/trpc';
 
-import '@fortawesome/fontawesome-svg-core/styles.css';
-import '~/styles/fonts';
 import '~/styles/globals.css';
+import '~/styles/fonts';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 config.autoAddCss = false;
 
