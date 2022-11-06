@@ -21,7 +21,7 @@ function renderSocialLinks(item: PlatformItem) {
     }
     case 'youtube': {
       return (
-        <SocialLinkButton href={`https://www.youtube.com/c/${item.id}`}>
+        <SocialLinkButton href={`https://www.youtube.com/channel/${item.id}`}>
           <span className="sr-only">YouTube</span>
           <FontAwesomeIcon icon={faYoutube} />
         </SocialLinkButton>
