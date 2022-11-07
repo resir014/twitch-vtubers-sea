@@ -25,8 +25,14 @@ export function CountryListItem({ id, name }: CountryListItemProps) {
   return (
     <div className="relative group bg-white p-6 shadow rounded-lg focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
       <div>
-        <span className="bg-gray-50 rounded-lg inline-flex items-center justify-center w-24 h-24 ring-4 ring-white">
-          <img src={`https://flagcdn.com/w80/${id}.png`} className="w-20" alt="Indonesia" />
+        <span className="bg-gray-100 rounded-lg inline-flex items-center justify-center w-24 h-24 ring-4 ring-white group-hover:bg-gray-200">
+          <img
+            loading="lazy"
+            src={`https://flagcdn.com/w80/${id}.png`}
+            srcSet={`https://flagcdn.com/w160/${id}.png 2x`}
+            className="w-20"
+            alt={name}
+          />
         </span>
       </div>
       <div className="mt-8">
