@@ -12,7 +12,7 @@ const meta = {
 };
 
 export async function getStaticProps() {
-  const { default: countries } = await import('~/modules/database/countries');
+  const { default: countries } = await import('~/modules/content/countries');
 
   return {
     props: {

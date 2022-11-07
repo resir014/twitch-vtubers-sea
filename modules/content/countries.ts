@@ -1,4 +1,4 @@
-import countries from '~/_data/countries.json';
+import countries from '~/_content/countries.json';
 
 export type CountryDetail = {
   readonly id: string;

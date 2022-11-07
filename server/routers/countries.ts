@@ -5,7 +5,7 @@ import { publicProcedure, router } from '../trpc';
 
 export const countriesRouter = router({
   getAllCountries: publicProcedure.query(async () => {
-    const { default: countries } = await import('~/modules/database/countries');
+    const { default: countries } = await import('~/modules/content/countries');
 
     if (!countries.length) {
       return [];
@@ -40,7 +40,7 @@ export const countriesRouter = router({
       })
     )
     .query(async ({ input: { country } }) => {
-      const { default: countries } = await import('~/modules/database/countries');
+      const { default: countries } = await import('~/modules/content/countries');
 
       if (!country) {
         throw new TRPCError({
