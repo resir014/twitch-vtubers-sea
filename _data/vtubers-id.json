@@ -205,6 +205,23 @@
   },
   {
     "type": "twitch",
+    "id": "vincentvnnzvogel",
+    "birthday": null,
+    "persona": null,
+    "affiliation": null,
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "VNNZ16"
+      },
+      {
+        "type": "youtube",
+        "vanity_url": "VincentVNNZVogel"
+      }
+    ]
+  },
+  {
+    "type": "twitch",
     "id": "victorhandoyoch",
     "birthday": null,
     "persona": null,
