@@ -6,6 +6,7 @@
     "lib": ["dom", "es2017"],
     "baseUrl": ".",
     "paths": {
+      "~/_content/*": ["_content/*"],
       "~/_data/*": ["_data/*"],
       "~/components/*": ["components/*"],
       "~/modules/*": ["modules/*"],
