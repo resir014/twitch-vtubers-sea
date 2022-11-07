@@ -1,22 +1,73 @@
 import * as React from 'react';
 import { NextSeo } from 'next-seo';
 import { Container } from '~/components/ui/container';
-import { useRouter } from 'next/router';
-import { parseString } from '~/utils/query-parser';
 import { BaseLayout } from '~/components/layouts/base-layout';
 import { PaginatedStreamerListTable } from '~/modules/streamer-list/paginated-streamer-list-table';
-import { trpc } from '~/utils/trpc';
 import { PageHeader } from '~/components/page/page-header';
 import { Page } from '~/components/page/page';
+import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
+import CustomErrorPage from 'pages/_error';
 
-export default function VtubersListPage() {
-  const { query } = useRouter();
-  const country = parseString(query.country);
-  const { data, isLoading } = trpc.getCountryByCode.useQuery({ country });
+export async function getStaticProps({ params }: GetStaticPropsContext) {
+  const { default: countries } = await import('~/modules/database/countries');
+
+  if (!params?.country) {
+    return {
+      props: {
+        country: null,
+      },
+    };
+  }
+
+  const { country } = params;
+
+  const data = countries.find(item => item.id === country);
+
+  if (!data) {
+    return {
+      props: {
+        country: null,
+      },
+    };
+  }
+
+  return {
+    props: {
+      country: data,
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  const { default: countries } = await import('~/modules/database/countries');
+
+  if (!countries.length) {
+    return {
+      paths: [],
+      fallback: false,
+    };
+  }
+
+  return {
+    paths: countries.map(country => ({
+      params: {
+        country: country.id,
+      },
+    })),
+    fallback: false,
+  };
+}
+
+type VtubersListPageProps = InferGetStaticPropsType<typeof getStaticProps>;
+
+export default function VtubersListPage({ country }: VtubersListPageProps) {
+  if (!country) {
+    return <CustomErrorPage statusCode={404} />;
+  }
 
   const meta = {
-    title: data?.name,
-    description: `Listing all VTubers from ${data?.name} in the Southeast Asia Twitch VTubers database.`,
+    title: country.name,
+    description: `Listing all VTubers from ${country.name} in the Southeast Asia Twitch VTubers database.`,
   };
 
   return (
@@ -24,22 +75,15 @@ export default function VtubersListPage() {
       <NextSeo
         description={meta.description}
         openGraph={{
-          title: data?.name,
+          title: meta.title,
           description: meta.description,
         }}
         title={meta.title}
       />
       <Page>
         <Container>
-          <PageHeader
-            pageTitle={!isLoading && data?.name ? data.name : 'Loading...'}
-            description={
-              !isLoading && data?.name
-                ? `Listing all VTubers from ${data.name} in the Southeast Asia Twitch VTubers database.`
-                : 'Please wait a moment...'
-            }
-          />
-          <PaginatedStreamerListTable country={country} />
+          <PageHeader pageTitle={meta.title} description={meta.description} />
+          <PaginatedStreamerListTable country={country.id} />
         </Container>
       </Page>
     </BaseLayout>

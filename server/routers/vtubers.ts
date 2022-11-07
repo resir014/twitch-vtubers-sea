@@ -12,26 +12,6 @@ import { publicProcedure, router } from '../trpc';
 import { getDatabase } from '../procedures/vtubers/get-database';
 
 export const vtubersRouter = router({
-  getCountryDetail: publicProcedure
-    .input(
-      z.object({
-        country: z.string().optional(),
-      })
-    )
-    .query(async ({ input: { country } }) => {
-      if (!country) {
-        throw new TRPCError({
-          code: 'BAD_REQUEST',
-          message: 'Please input a country code.',
-        });
-      }
-
-      const vtubers = await getDatabase(country);
-
-      return {
-        count: vtubers.length,
-      };
-    }),
   getVtubers: publicProcedure
     .input(
       z.object({

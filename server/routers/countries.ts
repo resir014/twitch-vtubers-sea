@@ -1,5 +1,6 @@
 import { TRPCError } from '@trpc/server';
 import { z } from 'zod';
+import { getDatabase } from '../procedures/vtubers/get-database';
 import { publicProcedure, router } from '../trpc';
 
 export const countriesRouter = router({
@@ -12,6 +13,26 @@ export const countriesRouter = router({
 
     return countries;
   }),
+  getCountryDetail: publicProcedure
+    .input(
+      z.object({
+        country: z.string().optional(),
+      })
+    )
+    .query(async ({ input: { country } }) => {
+      if (!country) {
+        throw new TRPCError({
+          code: 'BAD_REQUEST',
+          message: 'Please input a country code.',
+        });
+      }
+
+      const vtubers = await getDatabase(country);
+
+      return {
+        count: vtubers.length,
+      };
+    }),
   getCountryByCode: publicProcedure
     .input(
       z.object({

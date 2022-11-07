@@ -10,6 +10,18 @@ export interface CountryListItemProps {
 export function CountryListItem({ id, name }: CountryListItemProps) {
   const { data, isLoading } = trpc.getCountryDetail.useQuery({ country: id });
 
+  const renderCount = () => {
+    if (isLoading) {
+      return 'Loading...';
+    }
+
+    if (data?.count) {
+      return `${data.count} VTubers in the database.`;
+    }
+
+    return 'No VTubers in the database.';
+  };
+
   return (
     <div className="relative group bg-white p-6 shadow rounded-lg focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
       <div>
@@ -25,11 +37,7 @@ export function CountryListItem({ id, name }: CountryListItemProps) {
             {name}
           </Link>
         </h3>
-        <p className="mt-2 text-sm text-gray-500">
-          {!isLoading && data?.count
-            ? `${data.count} VTubers in the database.`
-            : 'No VTubers in the database.'}
-        </p>
+        <p className="mt-2 text-sm text-gray-500">{renderCount()}</p>
       </div>
       <span
         className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
