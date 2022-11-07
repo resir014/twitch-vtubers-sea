@@ -1,36 +1,37 @@
 import * as React from 'react';
+import type { InferGetStaticPropsType } from 'next';
 import { NextSeo } from 'next-seo';
 import { Container } from '~/components/ui/container';
 import { BaseLayout } from '~/components/layouts/base-layout';
-import { trpc } from '~/utils/trpc';
 import { CountryListItem } from '~/modules/country-list/country-list-item';
 import siteConfig from '~/modules/content/site-config';
-import { LoadingPlaceholder } from '~/components/ui/loading';
 import { Page } from '~/components/page/page';
 
 const meta = {
   title: `${siteConfig.site_tagline} | ${siteConfig.site_name}`,
 };
 
-export default function IndexPage() {
-  const { data, isLoading } = trpc.getAllCountries.useQuery();
+export async function getStaticProps() {
+  const { default: countries } = await import('~/modules/database/countries');
 
+  return {
+    props: {
+      countries,
+    },
+  };
+}
+
+type IndexPageProps = InferGetStaticPropsType<typeof getStaticProps>;
+
+export default function IndexPage({ countries }: IndexPageProps) {
   const renderData = () => {
-    if (isLoading) {
-      return <LoadingPlaceholder />;
-    }
-
-    if (data) {
-      return (
-        <div className="rounded-lg grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {data.map(country => (
-            <CountryListItem key={country.id} id={country.id} name={country.name} />
-          ))}
-        </div>
-      );
-    }
-
-    return <div>Failed to load app.</div>;
+    return (
+      <div className="rounded-lg grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {countries.map(country => (
+          <CountryListItem key={country.id} id={country.id} name={country.name} />
+        ))}
+      </div>
+    );
   };
 
   return (
