@@ -13,7 +13,7 @@ export function PageHeader({ pageTitle, description, className, ...rest }: PageH
         {pageTitle}
       </h1>
       {description ? (
-        <p className="mx-auto mt-2 max-w-4xl text-lg text-gray-500">{description}</p>
+        <p className="mx-auto mt-2 max-w-4xl lg:text-lg text-gray-500">{description}</p>
       ) : null}
     </div>
   );

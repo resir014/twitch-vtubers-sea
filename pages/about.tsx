@@ -23,7 +23,7 @@ export default function AboutPage() {
       <Page>
         <Container>
           <PageHeader pageTitle={meta.title} description={meta.tagline} />
-          <div className="prose prose-lg prose-indigo mx-auto mt-8 lg:mt-12">
+          <div className="prose prose-md lg:prose-lg prose-indigo mx-auto mt-8 lg:mt-12">
             <p>
               While the rise of VTubers over the past few years — especially on the Southeast Asian
               region — is incredible to see, we felt like there&apos;s not much love for VTubers who
@@ -33,6 +33,26 @@ export default function AboutPage() {
               Therefore, we sought to create this open and actively-updated database on well-known
               VTubers who stream on this platform we all know and love!
             </p>
+
+            <h2>Maintainers</h2>
+            <p>The list is maintained by the following people:</p>
+            <ul>
+              <li>
+                <a href="https://twitter.com/resir014" target="_blank" rel="noopener noreferrer">
+                  @resir014
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/KATSUKi_D_TUBE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @KATSUKi_D_TUBE
+                </a>
+              </li>
+            </ul>
+
             <h2>Notice</h2>
             <p>
               This project is a <strong>proof of concept</strong>, and still uses sample data of the
@@ -43,12 +63,7 @@ export default function AboutPage() {
             <p>
               Since I&apos;m personally not that deeply-invested into the VTuber scene, I will need
               help in updating this database. Let me know at{' '}
-              <a
-                className="font-medium hover:underline"
-                href="https://twitter.com/resir014"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://twitter.com/resir014" target="_blank" rel="noopener noreferrer">
                 @resir014
               </a>{' '}
               on Twitter if you&apos;re interested.
