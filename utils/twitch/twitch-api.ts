@@ -56,13 +56,14 @@ export async function getTwitchUsers(token: string, user: string | string[] = 'r
   }
 }
 
-export async function getTwitchFollowers(token: string, user: string = '5162021') {
-  console.log('Fetching broadcast info...');
+export async function getTwitchFollowers(token: string, user: string) {
+  console.log('Fetching followers info...');
 
   const apiUrl = stringifyUrl({
     url: 'https://api.twitch.tv/helix/users/follows',
     query: {
       to_id: user,
+      first: 1,
     },
   });
 
