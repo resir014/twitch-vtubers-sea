@@ -1,19 +1,19 @@
 [
   {
     "type": "twitch",
-    "id": "charonfaustinus",
-    "name": "Charon Faustinus",
-    "birthday": "November 22",
-    "persona": "Cyber Dinosaur Vtuber",
+    "id": "cottonwings",
+    "name": "cottonwings",
+    "birthday": "November 11",
+    "persona": "Sheep-themed Vtuber",
     "affiliation": null,
     "other_platforms": [
       {
         "type": "website",
-        "link": "https://charon.monster/"
+        "link": "https://cottonwings.net/"
       },
       {
         "type": "twitter",
-        "id": "CharonFaustinus"
+        "id": "cottonwings"
       }
     ]
   }
