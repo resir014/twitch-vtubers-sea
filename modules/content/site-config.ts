@@ -1,4 +1,4 @@
-import siteConfig from '~/_data/site-config.json';
+import siteConfig from '~/_content/site-config.json';
 
 export type SiteConfig = {
   readonly site_name: string;
