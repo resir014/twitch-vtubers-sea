@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { CheckBadgeIcon } from '@heroicons/react/20/solid';
+import { GlobeAltIcon } from '@heroicons/react/24/outline';
 import { createColumnHelper } from '@tanstack/react-table';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -11,6 +12,14 @@ const columnHelper = createColumnHelper<VtubersResponseItem>();
 
 function renderSocialLinks(item: PlatformItem) {
   switch (item.type) {
+    case 'website': {
+      return (
+        <SocialLinkButton href={item.link}>
+          <span className="sr-only">Twitter</span>
+          <GlobeAltIcon className="w-4 h-4" />
+        </SocialLinkButton>
+      );
+    }
     case 'twitter': {
       return (
         <SocialLinkButton href={`https://twitter.com/${item.id}`}>

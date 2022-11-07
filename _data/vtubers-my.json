@@ -3,10 +3,14 @@
     "type": "twitch",
     "id": "cottonwings",
     "name": "cottonwings",
-    "birthday": null,
-    "persona": null,
+    "birthday": "November 11",
+    "persona": "Sheep-themed Vtuber",
     "affiliation": null,
     "other_platforms": [
+      {
+        "type": "website",
+        "link": "https://cottonwings.net/"
+      },
       {
         "type": "twitter",
         "id": "cottonwings"

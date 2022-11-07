@@ -8,6 +8,10 @@
     "affiliation": null,
     "other_platforms": [
       {
+        "type": "website",
+        "link": "https://renjirojunichi.carrd.co/"
+      },
+      {
         "type": "twitter",
         "id": "Renjiro_Junichi"
       },
@@ -25,6 +29,10 @@
     "persona": "Cyborg Fix Vtuber",
     "affiliation": null,
     "other_platforms": [
+      {
+        "type": "website",
+        "link": "https://katsuki-d.carrd.co/"
+      },
       {
         "type": "twitter",
         "id": "KATSUKi_D_TUBE"
@@ -44,6 +52,10 @@
     "affiliation": null,
     "other_platforms": [
       {
+        "type": "website",
+        "link": "https://linktr.ee/avilarozma"
+      },
+      {
         "type": "twitter",
         "id": "AvilaRozma"
       },
@@ -61,6 +73,10 @@
     "persona": "Dummyhead Vtuber",
     "affiliation": null,
     "other_platforms": [
+      {
+        "type": "website",
+        "link": "https://linktr.ee/tilehopper"
+      },
       {
         "type": "twitter",
         "id": "tilehopper"
@@ -80,6 +96,10 @@
     "affiliation": null,
     "other_platforms": [
       {
+        "type": "website",
+        "link": "https://shiromu.carrd.co/"
+      },
+      {
         "type": "twitter",
         "id": "shiromu_kara"
       },
@@ -94,7 +114,7 @@
     "id": "kurorak",
     "name": "Kurorak",
     "birthday": "November 10",
-    "persona": null,
+    "persona": "50% Black Mage/Wizard, 50% Furry Avatars",
     "affiliation": null,
     "other_platforms": [
       {
@@ -116,6 +136,10 @@
     "affiliation": null,
     "other_platforms": [
       {
+        "type": "website",
+        "link": "https://solo.to/naikaze"
+      },
+      {
         "type": "twitter",
         "id": "NaikazeVT"
       },
@@ -133,6 +157,10 @@
     "persona": "Illustrator Vtuber",
     "affiliation": null,
     "other_platforms": [
+      {
+        "type": "website",
+        "link": "https://cakwe.com/"
+      },
       {
         "type": "twitter",
         "id": "_cakwe"
@@ -152,6 +180,10 @@
     "affiliation": null,
     "other_platforms": [
       {
+        "type": "website",
+        "link": "https://mbakvene.carrd.co/"
+      },
+      {
         "type": "twitter",
         "id": "mbakvene"
       },
@@ -169,6 +201,10 @@
     "persona": "Illustrator Vtuber",
     "affiliation": null,
     "other_platforms": [
+      {
+        "type": "website",
+        "link": "https://raelaveire.carrd.co/"
+      },
       {
         "type": "twitter",
         "id": "raelaveire"
