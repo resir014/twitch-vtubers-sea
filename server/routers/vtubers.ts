@@ -6,10 +6,10 @@ import {
   StreamerTwitchData,
   VtubersResponseItem,
 } from '~/modules/database/types';
+import { getDatabase } from '~/modules/database/streamers';
 import { getTwitchFollowers, getTwitchToken, getTwitchUsers } from '~/utils/twitch/twitch-api';
 import { paginateItems } from '~/utils/pagination';
 import { publicProcedure, router } from '../trpc';
-import { getDatabase } from '../procedures/vtubers/get-database';
 
 export const vtubersRouter = router({
   getVtubers: publicProcedure

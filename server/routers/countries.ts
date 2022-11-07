@@ -1,6 +1,6 @@
 import { TRPCError } from '@trpc/server';
 import { z } from 'zod';
-import { getDatabase } from '../procedures/vtubers/get-database';
+import { getDatabase } from '~/modules/database/streamers';
 import { publicProcedure, router } from '../trpc';
 
 export const countriesRouter = router({

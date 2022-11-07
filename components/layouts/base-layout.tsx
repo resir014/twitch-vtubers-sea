@@ -4,7 +4,7 @@ import { Navbar } from '../page/navbar';
 
 export function BaseLayout({ children }: React.PropsWithChildren) {
   return (
-    <div className="flex flex-col w-full h-full min-h-screen bg-gray-100">
+    <div className="flex flex-col w-full min-h-screen bg-gray-100">
       <Navbar />
       {children}
       <Footer />
