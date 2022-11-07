@@ -9,7 +9,7 @@ import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import CustomErrorPage from 'pages/_error';
 
 export async function getStaticProps({ params }: GetStaticPropsContext) {
-  const { default: countries } = await import('~/modules/database/countries');
+  const { default: countries } = await import('~/modules/content/countries');
 
   if (!params?.country) {
     return {
@@ -39,7 +39,7 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
 }
 
 export async function getStaticPaths() {
-  const { default: countries } = await import('~/modules/database/countries');
+  const { default: countries } = await import('~/modules/content/countries');
 
   if (!countries.length) {
     return {
