@@ -45,6 +45,7 @@ function renderSocialLinks(item: PlatformItem) {
 export const columns = [
   columnHelper.accessor(
     row => ({
+      name: row.name,
       username: row.twitch?.username,
       status: row.twitch?.broadcasterType,
       displayName: row.twitch?.displayName,
@@ -82,16 +83,14 @@ export const columns = [
             ) : null}
             <div>
               <div className="flex items-center min-w-0">
-                <span className="block font-medium truncated text-gray-900">
-                  {item.displayName}
-                </span>
+                <span className="block font-medium truncated text-gray-900">{item.name}</span>
                 {item.status === 'partner' ? (
                   <CheckBadgeIcon className="ml-0.5 w-4 h-4 text-indigo-500" />
                 ) : null}
               </div>
               {item.username ? (
                 <span className="block text-blue-500 group-hover:underline">
-                  https://www.twitch.tv/{item.username}
+                  /{item.displayName}
                 </span>
               ) : null}
             </div>

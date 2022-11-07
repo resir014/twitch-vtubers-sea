@@ -19,6 +19,7 @@ export type StreamerTwitchData = {
 export type VtuberDetail = {
   readonly type: string;
   readonly id: string;
+  readonly name: string;
   readonly birthday?: string | null;
   readonly persona?: string | null;
   readonly affiliation?: string | null;

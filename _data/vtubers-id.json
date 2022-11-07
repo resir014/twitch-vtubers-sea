@@ -2,8 +2,9 @@
   {
     "type": "twitch",
     "id": "renjiro_junichi",
-    "birthday": null,
-    "persona": null,
+    "name": "Renjiro Junichi",
+    "birthday": "June 1",
+    "persona": "Racing Vtuber",
     "affiliation": null,
     "other_platforms": [
       {
@@ -19,8 +20,9 @@
   {
     "type": "twitch",
     "id": "katsuki_d",
-    "birthday": null,
-    "persona": null,
+    "name": "KATSUKi",
+    "birthday": "May 15",
+    "persona": "Cyborg Fix Vtuber",
     "affiliation": null,
     "other_platforms": [
       {
@@ -36,8 +38,9 @@
   {
     "type": "twitch",
     "id": "avilarozma",
-    "birthday": null,
-    "persona": null,
+    "name": "Avila Rozma",
+    "birthday": "April 16",
+    "persona": "Bunny Love Messenger",
     "affiliation": null,
     "other_platforms": [
       {
@@ -53,8 +56,9 @@
   {
     "type": "twitch",
     "id": "tilehopper",
-    "birthday": null,
-    "persona": null,
+    "name": "Rizki Salminen",
+    "birthday": "April 15",
+    "persona": "Dummyhead Vtuber",
     "affiliation": null,
     "other_platforms": [
       {
@@ -70,8 +74,9 @@
   {
     "type": "twitch",
     "id": "shiromu_kara",
-    "birthday": null,
-    "persona": null,
+    "name": "Shiromu Kara",
+    "birthday": "August 28",
+    "persona": "Local Sleepyhead",
     "affiliation": null,
     "other_platforms": [
       {
@@ -87,7 +92,8 @@
   {
     "type": "twitch",
     "id": "kurorak",
-    "birthday": null,
+    "name": "Kurorak",
+    "birthday": "November 10",
     "persona": null,
     "affiliation": null,
     "other_platforms": [
@@ -104,8 +110,9 @@
   {
     "type": "twitch",
     "id": "naikazevt",
-    "birthday": null,
-    "persona": null,
+    "name": "Naikaze",
+    "birthday": "September 1",
+    "persona": "10 IQ Femboy Vtuber",
     "affiliation": null,
     "other_platforms": [
       {
@@ -121,8 +128,9 @@
   {
     "type": "twitch",
     "id": "cakwe",
-    "birthday": null,
-    "persona": null,
+    "name": "Cakwe",
+    "birthday": "January 3",
+    "persona": "Illustrator Vtuber",
     "affiliation": null,
     "other_platforms": [
       {
@@ -138,8 +146,9 @@
   {
     "type": "twitch",
     "id": "venesha",
-    "birthday": null,
-    "persona": null,
+    "name": "Venesha",
+    "birthday": "February 27",
+    "persona": "Medok Vtuber",
     "affiliation": null,
     "other_platforms": [
       {
@@ -155,8 +164,9 @@
   {
     "type": "twitch",
     "id": "raelaveire",
-    "birthday": null,
-    "persona": null,
+    "name": "Raelaveire",
+    "birthday": "February 3",
+    "persona": "Illustrator Vtuber",
     "affiliation": null,
     "other_platforms": [
       {
@@ -172,8 +182,9 @@
   {
     "type": "twitch",
     "id": "raynexinanna",
+    "name": "Rayne Inanna",
     "birthday": null,
-    "persona": null,
+    "persona": "Renegade Celestial Princess",
     "affiliation": null,
     "other_platforms": [
       {
@@ -189,8 +200,9 @@
   {
     "type": "twitch",
     "id": "sedovt",
-    "birthday": null,
-    "persona": null,
+    "name": "Sedo",
+    "birthday": "December 5",
+    "persona": "Friendly Neighborhood Leviathan",
     "affiliation": null,
     "other_platforms": [
       {
@@ -206,7 +218,8 @@
   {
     "type": "twitch",
     "id": "vincentvnnzvogel",
-    "birthday": null,
+    "name": "Vincent Vogel",
+    "birthday": "March 30",
     "persona": null,
     "affiliation": null,
     "other_platforms": [
@@ -223,8 +236,9 @@
   {
     "type": "twitch",
     "id": "victorhandoyoch",
+    "name": "Victor Handoyo",
     "birthday": null,
-    "persona": null,
+    "persona": "Retired Street Racer",
     "affiliation": null,
     "other_platforms": [
       {
@@ -234,6 +248,24 @@
       {
         "type": "youtube",
         "id": "UCJFFbkk8t0dGxc5H1muYFIg"
+      }
+    ]
+  },
+  {
+    "type": "twitch",
+    "id": "koprol_",
+    "name": "Koprol",
+    "birthday": "September 1",
+    "persona": "Virtual Blobman",
+    "affiliation": null,
+    "other_platforms": [
+      {
+        "type": "twitter",
+        "id": "_Koprol_"
+      },
+      {
+        "type": "youtube",
+        "vanity_url": "Koprol_VTuber"
       }
     ]
   }
