@@ -1,0 +1,13 @@
+/* override nprogress.css */
+#nprogress .bar {
+  @apply bg-[#4338ca];
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 0.625rem #4338ca, 0 0 0.3125rem #4338ca;
+}
+
+#nprogress .spinner-icon {
+  @apply border-t-[#4338ca];
+  @apply border-l-[#4338ca];
+}
