@@ -1,7 +1,7 @@
 /** @type {import("next").NextConfig} */
 module.exports = {
   redirects() {
-    const countries = require('./_data/countries.json');
+    const countries = require('./_content/countries.json');
 
     return countries.map(country => ({
       source: `/${country.id}`,
