@@ -69,7 +69,7 @@ export function PaginatedStreamerListTable({ country, debug }: PaginatedStreamer
                           key={header.id}
                           scope="col"
                           className={clsx(
-                            'py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900',
+                            'whitespace-nowrap py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900',
                             index === 0 ? 'sm:pl-6' : null,
                             index + 1 === headerGroup.headers.length ? 'sm:pr-6' : null
                           )}
