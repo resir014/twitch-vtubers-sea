@@ -1,3 +1,6 @@
+# Vercel project directory
+.vercel
+
 # =========================
 # Node.js-Specific Ignores
 # =========================
