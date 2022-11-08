@@ -6,6 +6,14 @@ export interface SheetColumn {
   index: number;
 }
 
+export function parseString(value: string | number | null): string | null {
+  if (!value) {
+    return null;
+  }
+
+  return String(value);
+}
+
 export function extractURL(value: string): string {
   const $ = load(value);
   const links = $('a');
@@ -23,7 +31,7 @@ export function extractURL(value: string): string {
 }
 
 export function parseDatabase(row: string[]) {
-  return (prev: Record<string, number | string>, col: SheetColumn) => {
+  return (prev: Record<string, number | string | null>, col: SheetColumn) => {
     const colName = toSnakeCase(col.name);
     let cellValue = row[col.index];
 

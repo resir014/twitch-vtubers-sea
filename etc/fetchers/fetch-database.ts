@@ -4,7 +4,7 @@ import { load } from 'cheerio';
 import fetch from 'cross-fetch';
 import { VtuberDetail } from '~/modules/database/types';
 import { allIsEmptyString } from '../../utils/string-utils';
-import { parseDatabase } from './utils';
+import { parseDatabase, parseString } from './utils';
 
 export async function fetchDatabase() {
   const source = await fetch(
@@ -85,9 +85,9 @@ export async function fetchDatabase() {
         type: 'twitch',
         id: String(item.twitch_username),
         name: String(item.name),
-        birthday: String(item.birthday),
-        persona: String(item.persona),
-        affiliation: String(item.affiliation),
+        birthday: parseString(item.birthday),
+        persona: parseString(item.persona),
+        affiliation: parseString(item.affiliation),
         other_platforms: [],
       };
 
