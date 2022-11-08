@@ -4,6 +4,7 @@ export type PlatformItem = {
   type: string;
   id?: string;
   vanity_url?: string;
+  handle?: string;
   link?: string;
 };
 

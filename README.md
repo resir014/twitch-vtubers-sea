@@ -8,6 +8,12 @@
 >
 > Since I'm personally not that deeply-invested into the VTuber scene, I will need help in updating this database. Let me know at [@resir014](https://twitter.com/resir014) on Twitter if you're interested.
 
+## The database
+
+The complete database in raw form (without stats) can be viewed on [this link](https://docs.google.com/spreadsheets/d/1j3IF7d8zmj8Cgy_NljNRjfYMAyZt3M0VJubzJ7Ib3j4/htmlview).
+
+The submission/removal process can be viewed in the [Contributing Guidelines](CONTRIBUTING.md) document.
+
 ## Getting started
 
 ### Setting up the project
