@@ -70,8 +70,8 @@ export const columns = [
       avatar: row.twitch?.avatar,
     }),
     {
-      id: 'displayName',
-      header: 'Username',
+      id: 'profile',
+      header: 'Profile',
       cell: info => {
         const item = info.getValue();
 
