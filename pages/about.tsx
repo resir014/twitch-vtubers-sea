@@ -35,7 +35,10 @@ export default function AboutPage() {
             </p>
 
             <h2>Maintainers</h2>
-            <p>The list is maintained by the following people:</p>
+            <p>
+              The list is maintained by the following people. If you want to be added into this
+              list, please mention/DM one of them!
+            </p>
             <ul>
               <li>
                 <a href="https://twitter.com/resir014" target="_blank" rel="noopener noreferrer">

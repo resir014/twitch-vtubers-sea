@@ -4,7 +4,9 @@ Contributions to this project are welcome!
 
 ## Contributing to the database
 
-**Please do not contribute to the database right now!** We are currently in the process of finalising our data structure, and laying out a submission/removal process. Once a submission process is made, we will replace the sample database with a more complete list.
+We're currently setting up a submission/removal process for the database. Watch this space for more updates!
+
+In the meantime, you can mention/DM either [@resir014](https://twitter.com/resir014) or [@KATSUKi_D_TUBE](https://twitter.com/KATSUKi_D_TUBE) on Twitter if you want to be added to the database.
 
 ## Contributing to the website
 

@@ -29,6 +29,15 @@ function renderSocialLinks(item: PlatformItem) {
       );
     }
     case 'youtube': {
+      if (item.handle) {
+        return (
+          <SocialLinkButton href={`https://www.youtube.com/@${item.handle}`}>
+            <span className="sr-only">YouTube</span>
+            <FontAwesomeIcon icon={faYoutube} />
+          </SocialLinkButton>
+        );
+      }
+
       if (item.vanity_url) {
         return (
           <SocialLinkButton href={`https://www.youtube.com/c/${item.vanity_url}`}>
