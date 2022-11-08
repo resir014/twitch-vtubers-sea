@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import * as React from 'react';
 import { LoadingSpinner } from '~/components/ui/loading';
 import { trpc } from '~/utils/trpc';
-import { columns } from './streamer-list-table-config';
+import { columns } from './columns';
 import { useTablePagination } from './use-table-pagination';
 
 export interface PaginatedStreamerListTableProps {
