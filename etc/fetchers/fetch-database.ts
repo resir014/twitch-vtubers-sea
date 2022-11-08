@@ -101,7 +101,7 @@ export async function fetchDatabase() {
       if (item.twitter) {
         nextData.other_platforms.push({
           type: 'twitter',
-          link: String(item.twitter),
+          id: String(item.twitter),
         });
       }
 
