@@ -14,8 +14,8 @@ export function WarningBanner() {
           <div className="mt-2 text-sm text-yellow-700">
             <p>
               We&apos;re currently setting up a submission/removal process for the database. See our{' '}
-              <Link href="/about" className="font-medium hover:underline">
-                About page
+              <Link href="/contribute" className="font-medium hover:underline">
+                Contributing page
               </Link>{' '}
               for future updates!
             </p>
