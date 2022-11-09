@@ -38,7 +38,7 @@ export default function ContributePage({ data, content }: ContributePageProps) {
       />
       <Page>
         <Container>
-          <PageHeader pageTitle={meta.title} description={meta.tagline} />
+          <PageHeader pageTitle={meta.title} description={meta.description} />
           <MarkdownContent content={content} />
         </Container>
       </Page>
