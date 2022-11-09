@@ -1,4 +1,5 @@
 import { ExclamationTriangleIcon } from '@heroicons/react/20/solid';
+import Link from 'next/link';
 import * as React from 'react';
 
 export function WarningBanner() {
@@ -12,14 +13,14 @@ export function WarningBanner() {
           <h3 className="text-sm font-medium text-yellow-800">Heads up!</h3>
           <div className="mt-2 text-sm text-yellow-700">
             <p>
-              This project is a <strong>proof of concept</strong>, and still uses sample data of the
-              VTubers that I know. Once the data structure is finalised, and a submission/removal
-              process is laid out, I&apos;ll be opening this list out and will replace the
-              &quot;database&quot; with actual data.
+              We&apos;re currently setting up a submission/removal process for the database. See our{' '}
+              <Link href="/about" className="font-medium hover:underline">
+                About page
+              </Link>{' '}
+              for future updates!
             </p>
             <p className="mt-2">
-              Since I&apos;m personally not that deeply-invested into the VTuber scene, I will need
-              help in updating this database. Let me know at{' '}
+              In the meantime, you can mention/DM either{' '}
               <a
                 className="font-medium hover:underline"
                 href="https://twitter.com/resir014"
@@ -28,7 +29,16 @@ export function WarningBanner() {
               >
                 @resir014
               </a>{' '}
-              on Twitter if you&apos;re interested.
+              or{' '}
+              <a
+                className="font-medium hover:underline"
+                href="https://twitter.com/KATSUKi_D_TUBE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @KATSUKi_D_TUBE
+              </a>{' '}
+              on Twitter if you want to be added to the database.
             </p>
           </div>
         </div>
