@@ -7,7 +7,8 @@ import Link from 'next/link';
 
 const navigation = [
   { name: 'Home', href: '/', exact: true },
-  { name: 'About', href: '/about' },
+  { name: 'About', href: '/about', exact: true },
+  { name: 'Contribute', href: '/contribute', exact: true },
 ];
 
 export function Navbar() {

@@ -4,7 +4,7 @@ import { HtmrOptions } from 'htmr/src/types';
 
 const htmrTransform: HtmrOptions['transform'] = {
   a: (node: JSX.IntrinsicElements['a']) => {
-    const { href, children, ...rest } = node;
+    const { href, children, ref: _, ...rest } = node;
 
     if (href) {
       if (href.startsWith('http')) {
@@ -16,8 +16,8 @@ const htmrTransform: HtmrOptions['transform'] = {
       }
 
       return (
-        <Link href={href} passHref>
-          <a {...rest}>{children}</a>
+        <Link href={href} {...rest}>
+          {children}
         </Link>
       );
     }
