@@ -50,11 +50,11 @@ export const vtubersRouter = router({
       const { data, pagination } = paginateItems(vtubers, page, take);
 
       // Map ids in database to Twitch logins and get all Twitch API data (except follows)
-      const logins = data.map(item => item.id.toLowerCase());
+      const logins = data.map(item => item.id);
       const { data: twitchUsers } = await getTwitchUsers(token.access_token, logins);
 
       for (const databaseItem of data) {
-        const twitchUser = twitchUsers.find(item => databaseItem.id === item.login);
+        const twitchUser = twitchUsers.find(item => databaseItem.id.toLowerCase() === item.login);
         let twitchData: StreamerTwitchData | null = null;
 
         if (twitchUser) {
